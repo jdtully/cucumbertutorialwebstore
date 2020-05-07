@@ -1,6 +1,5 @@
 import home from "../../pages/Home";
 
-const clickMenuOption = (option) => {
+export default (option) => {
   home.selectMenuOption(option);
 };
-exports.default = clickMenuOption;

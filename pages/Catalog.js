@@ -1,9 +1,11 @@
 class Catalog {
-  get noResultErrorMessage() {
+  get noResultsErrorMessage() {
     return $(".alert.alert-warning");
   }
+
   get products() {
-    return $$("search .product-list .product container .product-name");
+    return $$("#search .product_list .product-container .product-name");
   }
 }
-export default new Catalog();
+
+module.exports = new Catalog();
